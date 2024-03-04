@@ -1,6 +1,6 @@
 def transform(raw_data):
 	# Find the items prices less than 25 dollars
-	return raw_data.loc[raw_data["Price Each"] < 24, ["Order ID", "Product", "Price Each", "Order Date"]]
+	return raw_data.loc[raw_data["Price Each"] < 25, ["Order ID", "Product", "Price Each", "Order Date"]]
 
 def load(clean_data):
 	# Write the data to a CSV file without the index column
