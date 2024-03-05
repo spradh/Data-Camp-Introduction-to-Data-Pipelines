@@ -14,7 +14,9 @@ try:
 	clean_tax_data = transform(raw_tax_data)
 	load(clean_tax_data, "clean_tax_data.parquet")
     
+#3
+	logging.info("Successfully extracted, transformed and loaded data.")  # Log a success message.
+    
 except Exception as e:
-	pass
+	logging.error(f"Pipeline failed with error: {e}")  # Log failure message
 
-#
